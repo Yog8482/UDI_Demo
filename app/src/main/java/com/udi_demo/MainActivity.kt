@@ -37,6 +37,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        this.finish()
+    }
     override fun onKeyUp(keyCode: Int, event: KeyEvent?): Boolean {
         super.onKeyDown(keyCode, event)
         val unicodeChar = event?.unicodeChar?.toChar()
