@@ -1,0 +1,41 @@
+<configuration>
+    <!-- Create a file appender for a log in the application's data directory -->
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${DATA_DIR}/logback_log.log</file>
+        <encoder>
+            <pattern>%date - %msg%n</pattern>
+        </encoder>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover period -->
+            <fileNamePattern>${DATA_DIR}/logback_log.%d{yyyy-MM-dd}.%i.zip</fileNamePattern>
+
+            <!-- size based rollover trigger -->
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>1MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+
+            <!-- keep 7 days' worth of history -->
+            <maxHistory>7</maxHistory>
+            <totalSizeCap>10MB</totalSizeCap>
+        </rollingPolicy>
+
+    </appender>
+
+    <!-- log to normal LogCat -->
+    <appender name="LOGCAT" class="ch.qos.logback.classic.android.LogcatAppender">
+        <tagEncoder>
+            <pattern>%logger{12}</pattern>
+        </tagEncoder>
+        <encoder>
+            <pattern>%line: %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Write DEBUG (and higher-level) messages to the log -->
+    <root level="TRACE">
+        <appender-ref ref="file" />
+        <appender-ref ref="LOGCAT" />
+    </root>
+
+</configuration>
