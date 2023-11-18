@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         sharedPrefs = SharedPrefs(this)
         APPTYPE = sharedPrefs.getAppType()
-        logger.debug("\n\t......x${APPTYPE.uppercase()}.......")
+        logger.debug("\n\t\t......x${APPTYPE.uppercase()}.......")
 
         // SLF4J
         setContentView(R.layout.activity_main)
@@ -47,11 +47,14 @@ class MainActivity : AppCompatActivity() {
             GlobalConstants.APP_INSTA -> {
                 messageText.background =
                     ResourcesCompat.getDrawable(resources, R.drawable.insta_bg, null)
+                messageText.setTextColor(ResourcesCompat.getColor(resources,R.color.white,null))
             }
 
             GlobalConstants.APP_YOUTUBE -> {
                 messageText.background =
                     ResourcesCompat.getDrawable(resources, R.drawable.youtube_bg, null)
+                messageText.setTextColor(ResourcesCompat.getColor(resources,R.color.white,null))
+
             }
 
             else -> {}
@@ -65,7 +68,7 @@ class MainActivity : AppCompatActivity() {
             if (logginUser.isEmpty()) {
                 loginUser.error = "Empty"
             } else {
-                logger.debug("\t..........UserName:$logginUser...........")
+                logger.debug("....UserName:$logginUser....")
 //                Log.i(TAG,"\n\t..........UserName:$logginUser...........")
                 this.currentFocus?.let { it1 -> hideKeyboard(it1) }
                 loginUser.error = null
