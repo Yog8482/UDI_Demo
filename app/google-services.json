@@ -39,6 +39,102 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:499183104497:android:438124683f620edae15450",
+        "android_client_info": {
+          "package_name": "com.udi_demo.flipkart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499183104497-k05cp04iefh91tmfosovivt13acjcgvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC7Od1CFnUI9ox_MoQpKN7PNAeMmFS9jU"
+        },
+        {
+          "current_key": "AIzaSyDTrAbpYEPcPjqPb8DspSavBDghWtLZsMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499183104497-k05cp04iefh91tmfosovivt13acjcgvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499183104497:android:e07a6d2326826ad0e15450",
+        "android_client_info": {
+          "package_name": "com.udi_demo.instagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499183104497-k05cp04iefh91tmfosovivt13acjcgvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC7Od1CFnUI9ox_MoQpKN7PNAeMmFS9jU"
+        },
+        {
+          "current_key": "AIzaSyDTrAbpYEPcPjqPb8DspSavBDghWtLZsMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499183104497-k05cp04iefh91tmfosovivt13acjcgvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499183104497:android:17c0cb2316c4eeaee15450",
+        "android_client_info": {
+          "package_name": "com.udi_demo.youtube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499183104497-k05cp04iefh91tmfosovivt13acjcgvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC7Od1CFnUI9ox_MoQpKN7PNAeMmFS9jU"
+        },
+        {
+          "current_key": "AIzaSyDTrAbpYEPcPjqPb8DspSavBDghWtLZsMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499183104497-k05cp04iefh91tmfosovivt13acjcgvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:499183104497:android:040eb5c13c72f44ae15450",
         "android_client_info": {
           "package_name": "com.vinimay.buyerapp"

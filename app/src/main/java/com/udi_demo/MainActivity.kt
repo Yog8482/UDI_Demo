@@ -12,21 +12,22 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
+import com.udi_demo.flipkart.R
 import org.slf4j.LoggerFactory
 
 
 class MainActivity : AppCompatActivity() {
     var logginUser = ""
     val logger = LoggerFactory.getLogger(MainActivity::class.java)
-    lateinit var sharedPrefs: SharedPrefs
-    var APPTYPE = ""
+//    lateinit var sharedPrefs: SharedPrefs
+    var APPTYPE = GlobalConstants.APP_FLIPKART
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 // Enable the home button
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        sharedPrefs = SharedPrefs(this)
-        APPTYPE = sharedPrefs.getAppType()
+//        sharedPrefs = SharedPrefs(this)
+//        APPTYPE = sharedPrefs.getAppType()
         logger.debug("\n\t\t......x${APPTYPE.uppercase()}.......")
 
         // SLF4J

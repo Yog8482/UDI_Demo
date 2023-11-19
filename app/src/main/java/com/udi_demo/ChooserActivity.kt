@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.View.OnClickListener
 import androidx.core.content.ContextCompat
+import com.udi_demo.flipkart.R
 
 class ChooserActivity : AppCompatActivity(), OnClickListener {
     lateinit var sharedPrefs:SharedPrefs

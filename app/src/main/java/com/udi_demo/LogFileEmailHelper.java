@@ -8,6 +8,8 @@ import android.net.Uri;
 import androidx.annotation.NonNull;
 import androidx.core.content.FileProvider;
 
+import com.udi_demo.flipkart.R;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -48,7 +50,7 @@ public class LogFileEmailHelper {
 
         ArrayList<Uri> uris = new ArrayList<Uri>();
         for (File file : logFiles) {
-            Uri u = FileProvider.getUriForFile(activity, "com.udi_demo.provider", file);
+            Uri u = FileProvider.getUriForFile(activity, activity.getString(R.string.file_provider_authority), file);
             uris.add(u);
         }
         mailIntent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);
