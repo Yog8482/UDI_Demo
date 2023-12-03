@@ -6,9 +6,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/flipkart"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/flipkart"
         android:supportsRtl="true"
         android:theme="@style/Theme.UDI_Demo"
         tools:targetApi="31">

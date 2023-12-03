@@ -8,7 +8,6 @@ import android.net.Uri;
 import androidx.annotation.NonNull;
 import androidx.core.content.FileProvider;
 
-import com.udi_demo.flipkart.R;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

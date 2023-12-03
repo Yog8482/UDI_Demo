@@ -12,7 +12,6 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
-import com.udi_demo.flipkart.R
 import org.slf4j.LoggerFactory
 
 
@@ -20,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     var logginUser = ""
     val logger = LoggerFactory.getLogger(MainActivity::class.java)
 //    lateinit var sharedPrefs: SharedPrefs
-    var APPTYPE = GlobalConstants.APP_FLIPKART
+    var APPTYPE = GlobalConstants.APP_Default
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,7 +57,9 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-            else -> {}
+            else -> {
+                messageText.background = null
+            }
         }
 
         emailLogsBtn.setOnClickListener {

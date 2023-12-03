@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">xFlipkart</string>
-    <string name="file_provider_authority">com.udi_demo.flipkart.provider</string>
+    <string name="app_name">UDI Demo</string>
+    <string name="file_provider_authority">com.udi_demo.provider</string>
 </resources>
