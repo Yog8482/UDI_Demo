@@ -5,15 +5,15 @@ plugins {
 }
 
 android {
-    namespace 'com.udi_demo'
+    namespace 'com.udi_demo.instagram'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.udi_demo"
+        applicationId "com.udi_demo.instagram"
         minSdk 24
         targetSdk 33
         versionCode 2
-        versionName "UDI 2.0"
+        versionName "UDI 2.0-xInstagram"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

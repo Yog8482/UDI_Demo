@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     var logginUser = ""
     val logger = LoggerFactory.getLogger(MainActivity::class.java)
 //    lateinit var sharedPrefs: SharedPrefs
-    var APPTYPE = GlobalConstants.APP_Default
+    var APPTYPE = GlobalConstants.APP_INSTA
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
