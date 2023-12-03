@@ -12,6 +12,7 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
+import com.udi_demo.instagram.R
 import org.slf4j.LoggerFactory
 
 
