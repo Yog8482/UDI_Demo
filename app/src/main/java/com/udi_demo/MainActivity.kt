@@ -12,6 +12,7 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
+import com.udi_demo.youtube.R
 import org.slf4j.LoggerFactory
 
 
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     var logginUser = ""
     val logger = LoggerFactory.getLogger(MainActivity::class.java)
 //    lateinit var sharedPrefs: SharedPrefs
-    var APPTYPE = GlobalConstants.APP_Default
+    var APPTYPE = GlobalConstants.APP_YOUTUBE
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

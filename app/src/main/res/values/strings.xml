@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">UDI Demo</string>
-    <string name="file_provider_authority">com.udi_demo.provider</string>
+    <string name="app_name">xYoutube</string>
+    <string name="file_provider_authority">com.udi_demo.youtube.provider</string>
 </resources>
