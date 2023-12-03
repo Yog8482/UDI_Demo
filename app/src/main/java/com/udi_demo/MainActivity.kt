@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
             val bundle = Bundle()
             bundle.putString("KeyCode_$keyCode", unicodeChar.toString())
 //           Log.i(TAG,"Key pressed->\nKeyCode=$keyCode \n Key Character=${unicodeChar.toString()}")
-            logger.debug("Key code:$keyCode, char:$unicodeChar")
+            logger.debug("Key code:$keyCode, char:${unicodeChar.toString()}")
 //            Log.i("MainActivity", "Key code:$keyCode, char:$unicodeChar")
             FirebaseAnalytics.logEvent(FirebaseEvents.KEYBOARD_KEY_PRESS, bundle)
         }
